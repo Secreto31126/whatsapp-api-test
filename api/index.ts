@@ -1,13 +1,17 @@
-import { VercelRequest, VercelResponse } from "@vercel/node";
+import type { VercelRequest, VercelResponse } from "@vercel/node";
+import type { GetParams } from "whatsapp-api-js/types";
+
 import WhatsAppAPI from "whatsapp-api-js/index";
 import { Node18 } from "whatsapp-api-js/setup/node";
-import type { GetParams } from "whatsapp-api-js/types";
 
 const Whatsapp = new WhatsAppAPI(Node18({
     token: process.env.WHATSAPP_TOKEN,
     appSecret: process.env.WHATSAPP_APP_SECRET,
     webhookVerifyToken: process.env.WHATSAPP_WEBHOOK_VERIFY_TOKEN
 }));
+
+import { Text, Image, Document } from 'whatsapp-api-js/messages';
+const message = new Text('Hi');
 
 Whatsapp.on.message = console.log;
 
