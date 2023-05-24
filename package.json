@@ -1,0 +1,12 @@
+{
+    "private": true,
+    "type": "module",
+    "dependencies": {
+        "whatsapp-api-js": "github:secreto31126/whatsapp-api-js#alpha"
+    },
+    "devDependencies": {
+        "@types/node": "^18.16.3",
+        "@vercel/node": "^2.14.0",
+        "typescript": "latest"
+    }
+}
