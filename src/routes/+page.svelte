@@ -10,9 +10,9 @@
 
 <form on:submit|preventDefault>
 	<div class="inputs">
-		<input type="text" id="token" bind:value={token} placeholder="Token" required />
-		<input type="number" id="from" bind:value={from} placeholder="From (phoneID)" required />
-		<input type="number" id="to" bind:value={to} placeholder="To" required />
+		<input type="text" bind:value={token} placeholder="Token" required />
+		<input type="number" bind:value={from} placeholder="From (phoneID)" required />
+		<input type="number" bind:value={to} placeholder="To (phone)" required />
 	</div>
 
 	<div class="buttons">

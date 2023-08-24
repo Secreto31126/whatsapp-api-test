@@ -1,16 +1,24 @@
 import { expect, test } from '@playwright/test';
 
-test('All the messages are sent as expected', async ({ page }) => {
-	await page.goto('/');
-	await page.fill('input#token', process.env.TOKEN as string);
-	await page.fill('input#from', process.env.FROM as string);
-	await page.fill('input#to', process.env.TO as string);
+test.describe('Test if the buttons work', () => {
+	for (let i = 0; i < 15; i++) {
+		test(`Button ${i + 1} works`, async ({ page }) => {
+			await page.goto('/');
+			await page.waitForTimeout(500);
+			await page.getByPlaceholder('Token').fill(process.env.TOKEN as string);
+			await page.getByPlaceholder('From (phoneID)').fill(process.env.FROM as string);
+			await page.getByPlaceholder('To (phone)').fill(process.env.TO as string);
 
-	for (const button of await page.$$('button')) {
-		await button.click();
-		const response = await page.waitForResponse('https://graph.facebook.com/**');
-		const json = await response.json();
-		expect(json).toBeOK();
-		await page.waitForTimeout(2000);
+			const button = (await page.$$(`button`))[i];
+			if (!button) throw new Error('Button not found');
+
+			await button.click();
+			expect(page.url()).toBe('http://localhost:5173/');
+			const response = await page.waitForResponse('https://graph.facebook.com/**', {
+				timeout: 5000
+			});
+			expect(response.ok()).toBeTruthy();
+			await page.waitForTimeout(1000);
+		});
 	}
 });
