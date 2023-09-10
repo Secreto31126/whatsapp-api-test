@@ -4,7 +4,7 @@
 	"private": true,
 	"type": "module",
 	"dependencies": {
-		"whatsapp-api-js": "^1.0.5-beta.1"
+		"whatsapp-api-js": "github:Secreto31126/whatsapp-api-js#alpha"
 	},
 	"scripts": {
 		"dev": "vite dev",

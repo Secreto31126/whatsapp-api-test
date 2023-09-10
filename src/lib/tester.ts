@@ -25,7 +25,6 @@ export default class WhatsAppTester {
 	// #region Text
 
 	text() {
-		console.log(this);
 		return this.send(new Messages.Text('Hello World!'));
 	}
 
