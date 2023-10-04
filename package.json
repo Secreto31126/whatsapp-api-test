@@ -4,8 +4,8 @@
 	"private": true,
 	"type": "module",
 	"dependencies": {
-		"whatsapp-api-js": "^2.0.0-beta.1"
-	}, 
+		"whatsapp-api-js": "^2.1.2"
+	},
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
