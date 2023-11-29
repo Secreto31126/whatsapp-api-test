@@ -9,10 +9,6 @@ const Whatsapp = new WhatsAppAPI({
 
 export const POST: RequestHandler = async ({ request }) => {
 	return new Response(null, {
-		status: await Whatsapp.handle_post(
-			// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-			// @ts-ignore - Unfortunately, undici request type and SvelteKit request type are not fully compatible
-			request
-		)
+		status: await Whatsapp.handle_post(request)
 	});
 };
