@@ -17,7 +17,13 @@ export default class WhatsAppTester {
 	}
 
 	private async send(message: ClientMessage) {
-		const data = await this.Whatsapp.sendMessage(this.from, this.to, message);
+		const data = await this.Whatsapp.sendMessage(
+			this.from,
+			this.to,
+			message,
+			undefined,
+			'user-tracking-id'
+		);
 		console.log(data);
 		return data;
 	}
