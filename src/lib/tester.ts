@@ -47,7 +47,10 @@ export default class WhatsAppTester {
 	document() {
 		return this.send(
 			new Messages.Document(
-				'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf'
+				'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf',
+				false,
+				undefined,
+				'not null'
 			)
 		);
 	}
