@@ -4,9 +4,12 @@
 	"private": true,
 	"type": "module",
 	"dependencies": {
-		"whatsapp-api-js": "^2.3.0-beta.0"
+		"whatsapp-api-js": "github:Secreto31126/whatsapp-api-js#alpha"
 	},
 	"scripts": {
+		"install:alpha": "npm install github:Secreto31126/whatsapp-api-js#alpha",
+		"install:beta": "npm install whatsapp-api-js@beta",
+		"install:latest": "npm install whatsapp-api-js@latest",
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
