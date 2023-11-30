@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/test';
 
 test.describe('Test if the buttons work', () => {
-	for (let i = 0; i < 15; i++) {
+	for (let i = 0; i < 16; i++) {
 		test(`Button ${i + 1} works`, async ({ page }) => {
 			await page.goto('/');
 			await page.waitForTimeout(500);

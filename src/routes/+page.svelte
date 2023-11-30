@@ -29,6 +29,7 @@
 		<button on:click={() => tester.buttonsWithImageHeader()}>Send Buttons with Image Header</button>
 		<button on:click={() => tester.list()}>Send List</button>
 		<button on:click={() => tester.listSections()}>Send List with Sections</button>
+		<button on:click={() => tester.callToAction()}>Send CTA</button>
 		<button on:click={() => tester.contact()}>Send Contact</button>
 		<button on:click={() => tester.multiContact()}>Send Multi Contact</button>
 	</div>

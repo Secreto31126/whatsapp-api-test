@@ -149,6 +149,15 @@ export default class WhatsAppTester {
 		);
 	}
 
+	callToAction() {
+		return this.send(
+			new Messages.Interactive(
+				new Messages.ActionCTA('Google', 'https://google.com'),
+				new Messages.Body('Hello World!')
+			)
+		);
+	}
+
 	// #endregion
 
 	// #region Contact
