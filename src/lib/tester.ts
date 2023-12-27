@@ -167,6 +167,12 @@ export default class WhatsAppTester {
 		);
 	}
 
+	locationRequest() {
+		return this.send(
+			new Messages.Interactive(new Messages.ActionLocation(), new Messages.Body('Hello World!'))
+		);
+	}
+
 	// #endregion
 
 	// #region Contact

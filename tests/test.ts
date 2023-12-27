@@ -1,8 +1,28 @@
 import { expect, test } from '@playwright/test';
 
+const button_names = [
+	'Text',
+	'Location',
+	'Audio',
+	'Document',
+	'Image',
+	'Image with Caption',
+	'Sticker',
+	'Video',
+	'Buttons',
+	'Buttons with Text Header',
+	'Buttons with Image Header',
+	'List',
+	'List with Sections',
+	'CTA',
+	'Location Request',
+	'Contact',
+	'Multi Contact'
+];
+
 test.describe('Test if the buttons work', () => {
-	for (let i = 0; i < 16; i++) {
-		test(`Button ${i + 1} works`, async ({ page }) => {
+	for (let i = 0; i < 17; i++) {
+		test(`Button ${button_names[i]} works`, async ({ page }) => {
 			await page.goto('/');
 			await page.waitForTimeout(500);
 
