@@ -1,4 +1,4 @@
-import WhatsAppAPI from 'whatsapp-api-js';
+import { WhatsAppAPI } from 'whatsapp-api-js';
 import * as Messages from 'whatsapp-api-js/messages';
 import type { ClientMessage } from 'whatsapp-api-js/types';
 

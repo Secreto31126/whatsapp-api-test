@@ -1,40 +1,41 @@
 {
-	"name": "whatsapp-api-test",
-	"version": "0.0.1",
-	"private": true,
-	"type": "module",
-	"dependencies": {
-		"whatsapp-api-js": "^2.4.0-beta.1"
-	},
-	"scripts": {
-		"install:alpha": "npm install github:Secreto31126/whatsapp-api-js#alpha",
-		"install:beta": "npm install whatsapp-api-js@beta",
-		"install:latest": "npm install whatsapp-api-js@latest",
-		"dev": "vite dev",
-		"build": "vite build",
-		"preview": "vite preview",
-		"test": "dotenv playwright test",
-		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"lint": "prettier --plugin-search-dir . --check . && eslint .",
-		"format": "prettier --plugin-search-dir . --write ."
-	},
-	"devDependencies": {
-		"@playwright/test": "^1.28.1",
-		"@sveltejs/adapter-auto": "^2.0.0",
-		"@sveltejs/kit": "^1.20.4",
-		"@typescript-eslint/eslint-plugin": "^5.45.0",
-		"@typescript-eslint/parser": "^5.45.0",
-		"dotenv": "^16.3.1",
-		"eslint": "^8.28.0",
-		"eslint-config-prettier": "^8.5.0",
-		"eslint-plugin-svelte": "^2.30.0",
-		"prettier": "^2.8.0",
-		"prettier-plugin-svelte": "^2.10.1",
-		"svelte": "^4.0.5",
-		"svelte-check": "^3.4.3",
-		"tslib": "^2.4.1",
-		"typescript": "^5.0.0",
-		"vite": "^4.4.2"
-	}
+  "name": "whatsapp-api-test",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "whatsapp-api-js": "^4.0.0-beta.1"
+  },
+  "scripts": {
+    "install:alpha": "npm install github:Secreto31126/whatsapp-api-js#alpha",
+    "install:beta": "npm install whatsapp-api-js@beta",
+    "install:latest": "npm install whatsapp-api-js@latest",
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "dotenv playwright test",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "lint": "prettier --plugin-search-dir . --check . && eslint .",
+    "format": "prettier --plugin-search-dir . --write ."
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.45.3",
+    "@sveltejs/adapter-auto": "^2.0.0",
+    "@sveltejs/kit": "^1.20.4",
+    "@types/node": "^22.1.0",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.28.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-svelte": "^2.30.0",
+    "prettier": "^2.8.0",
+    "prettier-plugin-svelte": "^2.10.1",
+    "svelte": "^4.0.5",
+    "svelte-check": "^3.4.3",
+    "tslib": "^2.4.1",
+    "typescript": "^5.0.0",
+    "vite": "^4.4.2"
+  }
 }
