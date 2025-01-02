@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "dependencies": {
-    "whatsapp-api-js": "^4.0.0-beta.1"
+    "whatsapp-api-js": "^5.0.0-beta.0"
   },
   "scripts": {
     "install:alpha": "npm install github:Secreto31126/whatsapp-api-js#alpha",
